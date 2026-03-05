@@ -37,6 +37,12 @@ function Header({ search, onSearchChange, onCartClick }: HeaderProps) {
     🛒 <span className="cart-badge">{cartCount}</span>
 </span>
         </div>
+
+        {/* Mobile search bar beside chatbot */}
+        <div className="mobile-header-icons">
+          <SearchBar value={search} onChange={onSearchChange} className="mobile-search" />
+          <span className="icon mobile-chatbot">💬</span>
+        </div>
       </header>
       
       {/* Mobile menu overlay */}
