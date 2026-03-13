@@ -26,7 +26,7 @@ function Footer() {
         </div>
 
         <div className="footer-section">
-          <h3>More</h3> 
+          <h3>More</h3>
           <ul style={{ listStyle: "none", padding: 0 }}>
             <li style={{ marginLeft: "-1em" }}>
               &#9758; <a href="#">Career</a>

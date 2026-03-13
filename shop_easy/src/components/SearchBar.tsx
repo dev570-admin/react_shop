@@ -1,12 +1,13 @@
 type SearchBarProps = {
   value: string;
   onChange: (value: string) => void;
+  className?: string;
 };
 
-function SearchBar({ value, onChange }: SearchBarProps) {
+function SearchBar({ value, onChange, className = "search-bar" }: SearchBarProps) {
   return (
     <input
-      className="search-bar"
+      className={className}
       type="text"
       placeholder="Search products..."
       value={value}
